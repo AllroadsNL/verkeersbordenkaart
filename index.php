@@ -26,6 +26,7 @@ include('dbconnect.inc.php');
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Verkeersbordenkaart</title>
 <link rel="stylesheet" type="text/css" href="bundled/jquery-ui/jquery-ui.min.css">
 <link rel="stylesheet" type="text/css" href="bundled/leaflet/leaflet.css">
