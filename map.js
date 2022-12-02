@@ -38,23 +38,22 @@ var tileLayers = [
 	},
 	{
 		name: 'BRT Achtergrondkaart',
-		layer: L.tileLayer('https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaart/EPSG:3857/{z}/{x}/{y}.png', {
+		layer: L.tileLayer('https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/standaard/EPSG:3857/{z}/{x}/{y}.png', {
 			minZoom: 6,
 			maxZoom: 19,
 			bounds: [[50.5, 3.25], [54, 7.6]],
 			attribution: 'Kaartgegevens &copy; <a href="https://www.kadaster.nl">Kadaster</a> | <a href="https://www.verbeterdekaart.nl">Verbeter de kaart</a>'
 		})
 	},
-//	{
-//		name: 'Luchtfoto',
-	        //layer: L.tileLayer('https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts/2018_ortho25/EPSG:3857/{z}/{x}/{y}.png', {
-//	    layer: L.tileLayer('https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0/Actueel_ortho25/EPSG:3857/{z}/{x}/{y}.png', {
-//			minZoom: 6,
-//			maxZoom: 19,
-//			bounds: [[50.5, 3.25], [54, 7.6]],
-//			attribution: 'Kaartgegevens &copy; <a href="https://www.kadaster.nl">Kadaster</a>'
-//		})
-//	},
+	{
+		name: 'Luchtfoto Actueel Ortho 8cm RGB',
+		layer: L.tileLayer('https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0/Actueel_orthoHR/EPSG:3857/{zoom}/{x}/{y}.jpeg', {
+			minZoom: 6,
+			maxZoom: 21,
+			bounds: [[50.5, 3.25], [54, 7.6]],
+			attribution: 'Kaartgegevens &copy; <a href="https://www.kadaster.nl">Kadaster</a>'
+		})
+	},
 	{
 		name: 'Thunderforest Transport',
 		layer: L.tileLayer('https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=423cd178822a4d178e961233ebb95dcf', {
